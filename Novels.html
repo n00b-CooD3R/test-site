@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MrHolmes@arch</title>
+     <!-- 
+         Please be a decent human and give a credit.
+         Author: Hardeep Singh
+         Email: hp95565@gmail.com
+         Github: holmes-py.github.io
+      -->
+
+
+          <!--  Setting custom CSS for this page. -->
+
+    <style>
+        .NovelsPageTypeBox{
+            color: red !important; font-size: 20px;font-weight: 900;
+        }
+        .typewriter3{
+            width: 43%;
+            display: block;
+            font-size: 14pt;
+            color: white;
+            font-family: myFirstFont;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin:0; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .18em; /* Adjust as needed */
+            animation: typing 1.5s steps(70, end);
+            blink-caret2 .5s step-end infinite;
+            border-right:2px solid orangered;
+        }
+        @media (max-width:400px){
+            .typewriter3{
+                font-size: 15px !important;
+                width: 86%;
+            }
+            .typewriter3 > span{
+                font-size: 15px !important;
+            }
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" text="type/css" href="anim.css"/>
+    <link rel="stylesheet" text="type/css" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+      <!--  Calling Script here, because I cant do it the other way. -->
+    <script type="text/javascript">function change(id, todo){
+  if(todo.toLowerCase() === "over"){
+    var toChange = document.getElementById(id);
+    toChange.style="color: #00aeff";
+  }else{
+    var toChange = document.getElementById(id);
+    toChange.style="color: #FFFFFF";
+  }
+}</script>
+
+
+
+    <nav style="border-bottom: 2px solid #00aeff;">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MrHolmes<span style="color: #00aeff;">@arch</span></label>
+      <ul>
+        <li><a href="index.html" id="home" onmouseover="change('home','over')" onmouseout="change('home','out')">[Home]</a></li>
+        <li><a href="Articles.html" id="article" onmouseover="change('article','over')" onmouseout="change('article','out')">[Articles]</a></li>
+        <li><a href="Projects.html" id="project" onmouseover="change('project','over')" onmouseout="change('project','out')">[Projects]</a></li>
+        <li><a href="Novels.html" class="active" style="color: orangered !important;" id="novel"  >[Novels]</a></li>
+    </ul>
+    </nav>
+
+
+
+
+    <div class="mainContainer">
+        <div class="terminallook">
+            <article>
+                <h4>[~/Novels]<span style="color: #00aeff;">$</span> <span style="float: right; width: 4.5%;font-size: 13.4px;">✖️</span></h4>
+                <p>
+                <span class="typewriter" style="font-size: 25px;">$ <span style="color: red !important; font-size: 25px;; font-weight: 900;">echo *</span><span class="blinkme2">_</span></span>
+                <div class="incontento1">
+                    <p class="whoami">
+                       <span style="color: orangered !important;"> [18 June 20] </span> -- <a id = "1" style="color: white;" onmouseover="change('1','over')" onmouseout="change('1','out')" href="https://github.com/holmes-py/holmes-py.github.io/blob/master/Completed_Novels.md">List of read novels <i class="fas fa-external-link-square-alt"></i></a><br><br> <!--Only use double br for the last child-->
+                    </p>
+                </p>
+            </article>
+        </div>
+    </div>
+<footer class="mainFooter">
+        <p style="color: white;">Made with <span class="blinkme3">❤️ </span>By <a id = "footer" style="color: white;" onmouseover="change('footer','over')" onmouseout="change('footer','out')" href="https://holmes-py.github.io/"> Hardeep Singh </a> </br>[Last modified: 19 June'20]</p>
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</html>
